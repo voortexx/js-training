@@ -7,9 +7,16 @@
  *
  */
 
+ function whisper(string){
+    let stringModif = "*" + string.toLowerCase() + "*";
+     return (stringModif);
+ }
 
 //* Begin of tests
 const assert = require('assert')
+assert.strictEqual(typeof whisper, 'function')
+assert.strictEqual(whisper.length, 1)
+assert.deepStrictEqual(whisper('ABRA'), '*abra*')
+assert.deepStrictEqual(whisper('TEST'), '*test*')
 
-assert.fail('You must write your own tests')
 // End of tests */

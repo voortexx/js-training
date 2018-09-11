@@ -6,6 +6,10 @@
  *
  */
 
+ function sentence(arrayString){
+     return arrayString.join(' ');
+ }
+
 
 //* Begin of tests
 const assert = require('assert')

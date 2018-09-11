@@ -8,6 +8,18 @@
  */
 
 
+ function capitalize(string){
+    let stringCapitalize ="";
+     for(let i = 0; i < string.length; i++){
+         if (i == 0){
+             stringCapitalize += string[i].toUpperCase();
+         }
+         else {stringCapitalize += string[i].toLowerCase();
+        }
+    }
+     return stringCapitalize;
+ }
+
 //* Begin of tests
 const assert = require('assert')
 

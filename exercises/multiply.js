@@ -10,6 +10,32 @@
 
 // Your code :
 
+function multiply(number1, number2){
+    if (number2<0 && number1>0){
+      let result =0;
+      for(let i = 0; i < number1; i++){
+        result += number2;
+      }
+      return result;
+    }
+
+    else if (number1<0 && number2<0){
+      let result =0;
+      for(let i = 0; i < Math.abs(number1); i++){
+        result += number2;
+      }
+      return Math.abs(result);
+    }
+
+    else{
+      let result =0;
+      for(let i = 0; i < number2; i++){
+        result += number1;
+      }
+      return result;
+    }
+  }
+
 //* Begin of tests
 const assert = require('assert')
 

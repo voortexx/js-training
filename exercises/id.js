@@ -6,6 +6,10 @@
  * @notions Functions
  */
 
+function id(thing){
+    return thing;
+}
+
 // Your code :
 
 //* Begin of tests
