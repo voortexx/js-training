@@ -11,18 +11,19 @@
 
 // Your code :
 
-function multiply(number1, number2){
+function multiply(num1, num2){
     
-    if(number2<0 && number1>0){
-        let result = number2;   
-        return (number1 >= 1) ? result + multiply(result,--number1) : 0;
-    }
+    if (num1 == 0 || num2 == 0) {
+        return 0;
+}
 
+else if( num2 < 0 ) {
+    return - num1 + multiply(num1, num2 + 1);
+}
 
-    else{
-        let result = number1;   
-        return (number2 >= 1) ? result + multiply(result,--number2) : 0;
-    } 
+else {
+    return num1 + multiply(num1, num2 - 1);
+}
 }
 
 //* Begin of tests
